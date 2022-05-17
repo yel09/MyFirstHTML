@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+            <title>Ma. Mariel M. Dagohoy</title>
+
+                <link rel = "icon" href="https://i.imgur.com/F3m5TTA.png" >
+
+                    <!--Font Links-->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=BIZ+UDMincho&family=Beau+Rivage&family=Raleway:wght@100;800&display=swap" rel="stylesheet">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=BIZ+UDMincho&family=Beau+Rivage&family=Raleway:wght@100;800&display=swap" rel="stylesheet">
+
+<style>
+
+        *{
+            margin: 0%;
+            padding: 0;
+        	list-style: none;           	
+        }
+                
+        html{
+                scroll-behavior: smooth;
+            }
+            
+                /*button*/
+                button{
+                        position: absolute;
+                        top: 65%;
+                        left: 72%;
+                        transform: translate(-50%,-50%);
+                }
+
+                button{
+                        background: none;
+                        color: #ccc;
+                        width: 220px;
+                        height: 50px;
+                        border: 1px solid #000080;
+                        font-size: 18px;
+                        border-radius: 4px;
+                        transition: .6s;
+                        overflow: hidden;
+                }
+
+                button:focus{
+                                outline: none;
+                }
+
+                button::before{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                background: rgba(255,255,255.5);
+                                width: 60px;
+                                height: 100%;
+                                left: 0;
+                                top: 0;
+                                opacity: .5s;
+                                filter: blur(30px);
+                                transform: translateX(-130px) skewX(-15deg);
+                }
+
+                button::after{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                background: rgba(255,255,255.2);
+                                width: 30px;
+                                height: 100%;
+                                left: 30px;
+                                top: 0;
+                                opacity: 0;
+                                filter: blur(30px);
+                                transform: translate(-100px) scaleX(-15deg);
+                }
+
+                button:hover{
+                                background: #000080;
+                                cursor: pointer;
+                }
+
+                button:hover::before{
+                                        transform: translateX(300px) skewX(-15deg);
+                                        opacity: 1;
+                                        transition: .7s;
+
+                }
+                 /*end button*/
+
+        body {                    
+                height: auto;
+                background-color: black;
+        }
+
+        h1 {        
+                font-size: 2cm;
+                margin-top: 13%;
+                margin-left: 50%;
+                position: absolute;
+                color: rgb(228, 164, 16);
+                font-family: 'Arvo', serif;
+                font-family: 'Beau Rivage', cursive;
+                font-family: 'BIZ UDMincho', serif;
+                font-family: 'Raleway', sans-serif;
+        }
+
+        h2 {
+                font-size: 2cm;
+                margin-left: 10%;
+                color: white;
+        }
+                
+                .opening img{
+                                background-blend-mode: screen;
+                                width: 100%;
+                                height: 650px;
+                                clip-path: circle(40% at 10% 50%);
+                }
+
+                    #korean {
+                            font-size: 20px;
+                            margin-top: 21%;
+                            margin-left: 68%;
+                            position: absolute;
+                            color: white;
+                            display: flex;
+                            font-family: 'Beau Rivage', cursive;
+                    }
+
+                    #p {  
+                            font-size: 23px;
+                            margin-top: 24%;
+                            margin-left: 63%;
+                            position: absolute;
+                            color: white;
+                            display: flex;
+                            font-family: 'Beau Rivage', cursive;
+                    }
+                        
+                .firstsec{
+                            height: auto;
+                        }
+
+                    #PLM img{
+                            position: absolute;
+                            margin-top: 1%;
+                            margin-left: 47%;
+                            width: 350px;
+                            height: 250px;
+                            border-radius: 8px;
+                            border-top: 5px solid red;
+                            border-left: 5px solid red;
+                            border-right: 5px solid black;
+                            border-bottom: 5px solid black;
+                    }
+
+                    #IT img{
+                            position: absolute;
+                            margin-top: 7%;
+                            margin-left: 70%;
+                            width: 350px;
+                            height: 250px;
+                            border-radius: 8px;
+                            border-top: 5px solid black;
+                            border-left: 5px solid black;
+                            border-right: 5px solid red;
+                            border-bottom: 5px solid red;            
+                    }
+
+                    #css img{
+                            position: absolute;
+                            margin-top: 20%;
+                            margin-left: 55%;
+                            width: 300px;
+                            height: 2in;
+                            border-radius: 8px;
+                            border-top: 5px solid black;
+                            border-left: 5px solid red;
+                            border-right: 5px solid black;
+                            border-bottom: 5px solid red;
+                    }
+                            
+                    #intro{
+                            font-size: 17px;
+                            margin-left: 10%;
+                            color: white;
+                                
+                    }
+                       
+                .secondsec{
+                            margin-top: 5%;
+                            margin-left: 10%;
+                            color: white;
+                }
+                        
+                .navigatorBar{
+                            width: 85%;
+                            margin: auto;
+                            padding: 30px 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 10%;
+                            margin-left: 10%;
+                }
+
+                .navigatorBar ul li{
+                                    list-style: none;
+                                    display: inline-block;
+                                    margin: 0 20px;
+                                    position: relative;
+                }
+
+                .navigatorBar ul li a {
+                                    text-decoration: none;
+                                    color: white;
+                                    text-transform: uppercase;
+                }
+
+                .navigatorBar ul li::after{
+                                            content: '';
+                                            height: 3px;
+                                            width: 0%;
+                                            position: absolute;
+                                            background: purple;
+                                            left: 0;
+                                            bottom: -10px;
+                                            transition: 0.5s;
+                }
+
+                .navigatorBar ul li:hover::after{
+                                                width: 100%;
+                }
+                
+                .First {     
+                        background-image:  url(https://i.imgur.com/VKoKNs4.gifv);
+                        background-size: cover;
+                        height: 100vh;
+                        box-sizing: border-box;
+                        margin: 0%;         
+                }
+
+                img:hover{
+                            opacity: 0.5;
+                }
+               
+                .Second{
+                        height: 100vh;
+                        box-sizing: border-box;
+                }
+
+                    #meme{
+                            border-radius: 5px;
+                            border: 5px solid beige; 
+                            
+                            position: absolute;
+                            margin-left: 25%;
+                    }
+
+                    #meme1{                  
+                            border-radius: 5px;
+                            border: 5px solid beige;
+                            position: absolute;
+                            margin-left: 55%;
+                    }
+
+                    #meme2{
+                            border-radius: 5px;
+                            border: 5px solid beige;
+                            position: absolute;
+                            margin-top: 15%;
+                            margin-left: 55%;
+                    }
+
+                    #meme3{
+                            border-radius: 5px;
+                            border: 5px solid beige;
+                            position: absolute;
+                            margin-top: 15%;
+                            margin-left: 25%;
+                    }
+
+
+                .Third{
+                        height: 100vh;
+                        box-sizing: border-box;
+                }
+
+                    #fb{
+                        position: absolute;
+                        margin-top: 5% ;
+                        margin-left: 20%;
+                    }
+                
+                    #insta{
+                            position: absolute;
+                            margin-top: 5% ;
+                            margin-left: 50%;                   
+                    }
+
+                .media{
+                        margin-top: 30%;
+                        margin-left: 34%;
+                }
+
+</style>
+        
+</head>
+
+<body>
+
+<section id ="land">
+
+    <div class="wrapper">
+        <div class="btn"> 
+                    <a href="#una"><button type="button">START</button></a>
+        </div>
+    </div>
+      
+        <h1>Me, Myself and I</h1>
+
+    <div id = "korean">
+        <p>안녕하세요</p>
+    </div>
+
+    <div id="p">
+        <p>Do you want to know more about me?</p>
+    </div>
+  
+    <div class="opening">
+        <img src="https://i.imgur.com/6dkjT86.png" alt="source: imgur.com" /></a>
+    </div>
+
+</section>
+
+
+<section class="First">
+
+    <div id="una">
+        <br>
+        <br>
+        <h2 style="border-right: 5px solid rgb(255, 191, 0);width: 17%;">Profile</h2>
+    </div>
+
+    <div class="firstsec">
+        <div id="PLM"> 
+            <img src = "https://plm.edu.ph/images/news/press-releases/Pamantasa--ng-Lungsod-ng-Maynila-facade.jpg" alt="PLM Facade">
+
+                <div id="IT">
+                    <img src="https://i.imgur.com/sM0Ccb5.gif" alt="IT">
+            
+                    <div id ="css">
+                        <img src="https://i.gifer.com/77M0.gif" alt ="css meme">
+
+                            <div id="intro">
+                                <br>
+                                <br>
+                                <p>Hi I Am Mariel</p>
+                                <br>
+                                <p>19 years old</p>
+                                <br>
+                                <p>I am currently 1st Year in the Pamantasan ng Lungsod ng Maynila.</p>
+                                <br>
+                                <p>Taking Bachelor of Science major in Information Technology.</p>
+                                <br>
+                                <p>This is my first html page with a lot of css.</p>
+                            </div>
+              
+                    </div>
+
+                </div>
+                
+        </div>   
+            
+    </div>
+
+    <div class="navigatorBar">   
+            <ul>
+                <font size="4">
+                    <li><a href="#land"><b>Back</b></a></li>
+                    <li><a href="#pangalawa"><b>Next</b></a></li>
+                </font>
+            </ul>
+    </div>
+
+</section>
+    
+
+<section class="Second">
+
+    <div id="pangalawa">
+        <br>
+        <br>
+        <h2 style="border-right: 5px solid rgb(255, 191, 0); width: 21%;">Hobbies</h2>
+    </div>
+    
+        <div class="secondsec">
+
+            <div id="meme">
+                <img style="width: 400px;height: 200px;" src="https://i.imgur.com/fcNN112.gif" title="source: Guitar" >
+            </div>
+
+            <div id="meme1">
+                <img style="width: 400px; height: 200px;" src= "https://i.imgur.com/LUtbjKw.gif"  title="source: End Game" >
+            </div>
+
+            <div id="meme2">
+                <img style="width: 400px; height: 200px;" src= "https://i.imgur.com/lRurysY.gif"  title="source: Twice" >
+            </div>
+
+             <div id="meme3">
+                <img style="width: 400px; height: 200px;" src= "https://i.imgur.com/nmzVoJb.gif"  title="source: Attack on Titan" >
+            </div>
+             
+                <div id="hobbies">  
+                    <p>My Hobbies are:</p>
+                    <br>
+                    <p>Watch different kinds of series</p>
+                    <br>
+                    <p>Listen to music</p>
+                    <br>
+                    <p>Play guitar</p>
+                    <br>
+
+
+                </div>
+
+        </div>
+
+        
+    <div class="navigatorBar">   
+        <ul>
+            <font size="4">
+                <li><a href="#una"><b>Back</b></a></li>
+                <li><a href="#media"><b>Next</b></a></li>
+            </font>
+        </ul>
+     </div>
+
+</section>
+        
+
+<section class="Third">
+
+    <div class="contacts">
+
+        <div id ="media">
+            <br>
+            <br>
+            <h2 style="border-bottom: 5px solid rgb(255, 191, 0);width: 60%;"> You can contact me on:</h2>
+        </div>
+
+            <div id = "fb">
+                <a href="https://www.facebook.com/mariel.dagohoy30"><img style="width: 400px;"src="https://i.imgur.com/GoMKr9P.gif" title="Facebook.com" /></a>
+            </div>
+
+            <div id = "insta">
+                <a href="https://www.instagram.com/humming30/"><img style =" width: 400px;"src="https://i.imgur.com/aQhkfJz.gif" title="Instagram.com" /></a>
+            </div>
+
+    </div>
+
+    <div class="media">
+        
+        <div class="navigatorBar">   
+            <ul>
+                <font size="4">                    
+                    <li><a href="#pangalawa"><b>back</b></a></li>
+                    <li><a href="#land"><b>Back to Start</b></a></li>                  
+                </font>
+            </ul>
+         </div>
+    </div>
+        
+</section>
+
+        <br>
+        <br>
+
+</body>
+
+</html>
